@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "bc843672-045b-42cc-9fb3-ed106ce3cd57",
+		"name": "Serverless",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01-HelloLambda",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Full name",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "a@b.com",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "Serverless?",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Hello there",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://855mifztwi.execute-api.us-east-2.amazonaws.com/default/itenium-contact-us",
+					"protocol": "https",
+					"host": [
+						"855mifztwi",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						"itenium-contact-us"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikeBlogPost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://iteniumblogging.azurewebsites.net/api/LikeBlogPost?name=Test",
+					"protocol": "https",
+					"host": [
+						"iteniumblogging",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"LikeBlogPost"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Test"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
