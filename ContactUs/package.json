@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.7",
     "parse-multipart": "^1.0.4"
   }
 }
