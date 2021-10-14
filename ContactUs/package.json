@@ -1,0 +1,16 @@
+{
+  "name": "contact-us",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "zip": "deploy.bat",
+    "deploy": "npm run zip && aws lambda update-function-code --function-name itenium-contact-us --zip-file fileb://ContactUs.zip"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "parse-multipart": "^1.0.4"
+  }
+}
